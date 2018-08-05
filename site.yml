@@ -1,0 +1,9 @@
+---
+- hosts: debian-9-5
+
+  gather_facts: no
+  become: yes
+
+  roles:
+    - sshkeys
+    - bootstrap

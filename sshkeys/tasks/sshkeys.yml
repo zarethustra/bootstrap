@@ -1,0 +1,6 @@
+---
+- name: Install ssh keys
+  authorized_key:
+    user: frank
+    state: present
+    key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_rsa.pub') }}"
