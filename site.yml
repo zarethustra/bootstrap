@@ -5,5 +5,5 @@
   become: yes
 
   roles:
-    - sshkeys
     - bootstrap
+    - sshkeys
